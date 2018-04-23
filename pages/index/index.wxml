@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>     
+    </block> 
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+ </view>  -->
+  <!-- <button class="feiyButton"></button> -->
+  <view class="signupBox">
+    <view class="signUpView">
+    <text class="heading">Sign up</text>
+    <text class="bodyText">Join our community of people that want to be actor of change to access our full content!
+
+We will share with you more inspiring stories about social entrepreneurs in China, meaningful events or work opportunities!</text>
+  </view>
+    <view class="signUpView">
+      <text class="inputText">* Name</text>
+      <input class="signupInput"></input>
+    </view>
+    <view class="signUpView">
+      <text class="inputText">* City</text>
+      <input class="signupInput"></input>
+    </view>
+    <view class="signUpView">
+      <text class="inputText">* Email</text>
+      <input class="signupInput"></input>
+    </view>
+    <view class="signUpView">
+      <text class="inputText">* Password<text class="inputSubText">   6 characters minimum</text>
+      </text>
+      <input class="signupInput"></input>
+    </view>
+    <view class="signUpView">
+      <text class="inputText">* Password Confirmation</text>
+      <input class="signupInput"></input>
+    </view>
+    <view class="signUpView">
+      <text class="inputText">* Upload an avatar</text>
+    </view>
+    <view class="signUpView">
+      <button class="blueButton">Sign up</button>
+    </view>
+  </view>
+</view>

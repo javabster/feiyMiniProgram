@@ -1,0 +1,42 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding:0;
+  padding-bottom: 10px;
+  /* background-color: red; */
+  /* box-sizing: border-box; */
+} 
+
+.heading{
+  font-size: 50px;
+  text-align: center;
+}
+
+.bodyText{
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.inputText {
+  font-size: 15px;
+}
+
+.signupInput {
+  background-color: white;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+.blueButton {
+  height: 45px;
+  width: 50%;
+  background-color:aqua;
+  color: white;
+}
