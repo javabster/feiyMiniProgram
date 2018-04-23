@@ -16,12 +16,24 @@ Page({
     var password = e.detail.value.password
     var passwordCon = e.detail.value.passwordCon
 
-    if (password !== passwordCon) {
+    if (password.length < 6){
+      wx.showModal({
+        title: "Password Too Short",
+        content: "Please create a password with a minimum of 6 characters",
+        confirmText: "Ok",
+        showCancel: false,
+        confirmColor: "#31c7c5",
+        success: function (res) {
+          console.log('success')
+        }
+      })
+    } else if (password !== passwordCon) {
       wx.showModal({
         title: "Invalid Password Input",
         content: "Your passwords don't match, please try again",
         confirmText: "Ok",
         showCancel: false,
+        confirmColor: "#31c7c5",
         success: function (res) {
           console.log('success')
         }

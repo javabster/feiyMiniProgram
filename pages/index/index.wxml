@@ -4,9 +4,14 @@
    <form bindsubmit="bindFormSubmit">
     <view class="signUpView">
     <text class="heading">Sign up</text>
-    <text class="bodyText">Join our community of people that want to be actor of change to access our full content!
+    <text class="bodyText">Join our community!
 
-We will share with you more inspiring stories about social entrepreneurs in China, meaningful events or work opportunities!</text>
+We'll share with you (via email) more inspiring stories about social entrepreneurs in China, meaningful events and work opportunities!
+
+You will also get your own account on our website, where you can access all the information you see here on WeChat, all on one convenient online platform.
+
+Check out feiy.co to see for yourself!
+</text>
   </view>
     <view class="signUpView">
       <text class="inputText">* Name</text>
