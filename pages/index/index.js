@@ -6,6 +6,34 @@ Page({
   data: {
     userInfo: {},
     loading: false,
+    image: false,
+  },
+
+  listenerBtnChooseImage: function() {
+    var that = this;
+
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success: function(res) {
+        console.log('success')
+        that.setData({
+          src: res.tempFilePaths
+        })
+        
+        that.setData({image: true})
+
+        wx.getImageInfo({
+          src: res.tempFilePaths[0],
+          success: function(res) {
+            console.log(res.width)
+            console.log(res.height)
+            console.log(res.path)
+          }
+        })
+      }
+    })
   },
 
   bindFormSubmit: function(e) {
@@ -40,6 +68,14 @@ Page({
       })
     } else {
       // database stuff
+      wx.getImageInfo({
+        src: res.tempFilePaths[0],
+        success: function (res) {
+          console.log(res.width)
+          console.log(res.height)
+          console.log(res.path)
+        }
+      })
     }
   }
 
