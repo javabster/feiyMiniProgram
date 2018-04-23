@@ -20,17 +20,11 @@
   margin-top: 200px;
 }
 
-.feiyButton {
-  width: 200rpx;
-  height: 100rpx;
-  background-color: green;
-}
-
 .signupBox {
   width: 80%;
   height: 100%;
   padding: 5%;
-  background-color: lightgrey;
+  background-color: #EDECEC;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -42,7 +36,8 @@
   flex-direction: column;
 }
 
+
 .inputSubText {
   font-size: 12px;
-  color:#aaa;
+  color: #aaa;
 }

@@ -14,16 +14,19 @@
 .heading{
   font-size: 50px;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .bodyText{
   font-size: 15px;
   text-align: center;
   margin-top: 5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .inputText {
   font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .signupInput {
@@ -32,11 +35,14 @@
   width: 100%;
   border-radius: 5px;
   margin-top: 2%;
+  padding-left: 10px;
 }
 
 .blueButton {
   height: 45px;
   width: 50%;
-  background-color:aqua;
-  color: white;
+  background-color:#31c7c5;
+  color: #F8F8F8;
+  font-weight: lighter;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
