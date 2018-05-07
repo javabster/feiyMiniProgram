@@ -1,4 +1,11 @@
 //app.js
+const AV = require('./utils/av-weapp-min.js');
+
+AV.init({
+  appId: 'WojmqVVacgtoKy6YSfR1CH8y-gzGzoHsz', //CHANGE TO FEIY ACCOUNT
+  appKey: 'XxVilh6QzISXVn1oYnRcxVIC', //CHANGE TO FEIY ACCOUNT
+});
+
 App({
   onLaunch: function () {
     // 展示本地存储能力

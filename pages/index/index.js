@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
+const AV = require('../../utils/av-weapp-min.js');
 
 Page({
   data: {
@@ -67,7 +68,22 @@ Page({
         }
       })
     } else {
-      // database stuff
+      //database stuff
+      var user = new AV.User();
+      // var data = {}
+      // var avatar = new AV.File('avatar.png', data);
+
+      user.set('name', name);
+      user.setUsername(email);
+      user.set('city', city);
+      user.setEmail(email);
+      user.setPassword(password);
+      // user.set('avatar', avatar);
+      user.signUp().then(function (u) {
+      });
+
+
+      //display set image
       wx.getImageInfo({
         src: res.tempFilePaths[0],
         success: function (res) {
