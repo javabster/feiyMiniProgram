@@ -22,7 +22,7 @@ Page({
         that.setData({
           src: res.tempFilePaths
         })
-        
+
         that.setData({image: true})
 
         wx.getImageInfo({
@@ -33,6 +33,8 @@ Page({
             console.log(res.path)
           }
         })
+
+      that.setData({avatarPhoto: res.tempFilePaths[0]})
       }
     })
   },
@@ -68,30 +70,32 @@ Page({
         }
       })
     } else {
-      //database stuff
+      var fileUploadControl = ;
+      if (fileUploadControl.files.length > 0) {
+        var localFile = fileUploadControl.files[0];
+        var name = 'avatar.jpg';
+
+        var file = new AV.File(name, localFile);
+        file.save().then(function(file) {
+          console.log(file.url());
+        }, function(error) {
+          console.error(error);
+        });
+      }
+
+
       var user = new AV.User();
-      // var data = {}
-      // var avatar = new AV.File('avatar.png', data);
+      var avatar = new AV.File('avatar.png', file);
 
       user.set('name', name);
       user.setUsername(email);
       user.set('city', city);
       user.setEmail(email);
       user.setPassword(password);
-      // user.set('avatar', avatar);
+      user.set('avatar', avatar);
       user.signUp().then(function (u) {
       });
 
-
-      //display set image
-      wx.getImageInfo({
-        src: res.tempFilePaths[0],
-        success: function (res) {
-          console.log(res.width)
-          console.log(res.height)
-          console.log(res.path)
-        }
-      })
     }
   }
 

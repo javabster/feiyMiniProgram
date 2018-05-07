@@ -37,7 +37,7 @@ Check out feiy.co to see for yourself!
     <view class="signUpView">
       <button class="uploadImageBtn" bindtap="listenerBtnChooseImage">Upload an avatar</button>
       </view>
-      <image wx:if="{{image}}" src="{{src}}" mode="aspectFit" style="width: 100%"></image>
+      <image type="file" id="photoFileUpload" wx:if="{{image}}" src="{{src}}" mode="aspectFit" style="width: 100%"></image>
     <view class="signUpView">
       <button form-type="submit" class="blueButton" loading="{{loading}}">Sign up</button>
     </view>
