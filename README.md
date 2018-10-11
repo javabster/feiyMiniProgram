@@ -1,5 +1,5 @@
 # feiyMiniProgram
-The aim os this project was to create a WeChat mini program to enable users to sign up to main Feiy.co platform.
+The aim of this project was to create a WeChat mini program to enable users to sign up to main Feiy.co platform.
 
 Unfortunately, due to strict Chinese internet and censorship laws, this program was unable to be put into full use.
 
