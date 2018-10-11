@@ -70,7 +70,7 @@ Page({
         }
       })
     } else {
-      var fileUploadControl = ;
+      // var fileUploadControl = ;
       if (fileUploadControl.files.length > 0) {
         var localFile = fileUploadControl.files[0];
         var name = 'avatar.jpg';
